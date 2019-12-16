@@ -17,3 +17,8 @@ To make AI technology usable by every farmers for good purpose
 1) Ask questions, what do i want to achieve?
 2) What is the data needed?
 3) Algorithm
+
+## Basic things to do
+- Receiving data
+- Processing data
+- Showing output
