@@ -1,6 +1,9 @@
 # ProjectAgro
 - Agriculture project is the solutions for farmer to use AI technology.
-- Farmers does not have to go through technical understanding of Algorithm. They only need to think of the goals to achieve and collect data.
+- Farmers do not have to go through technical understanding of Algorithm. They only need to think of the goals to achieve and collect data.
+
+## Inspiration
+To make AI technology usable by every farmers for good purpose
 
 ## Basic Idea
 - Data
