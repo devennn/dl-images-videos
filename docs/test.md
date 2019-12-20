@@ -7,3 +7,4 @@
 ### Sample datasets
 - cifar10
 - cifar100
+- PetImages

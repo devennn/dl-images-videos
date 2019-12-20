@@ -3,6 +3,7 @@ if [ "$#" !=  2 ]
         echo "Usage: sh run_prog.sh <sample_input> <epochs_num(int)>
         - cifar10
         - cifar100
+        - PetImages
         "
 else
     for arg in "$@"
