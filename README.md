@@ -12,13 +12,16 @@ To make AI technology usable by every farmers for good purpose
   - Technical points. Where all processing happens
 - Action
   - What information do we want?
-  
+
 ## Process
 1) Ask questions, what do i want to achieve?
 2) What is the data needed?
 3) Algorithm
 
-## Basic things to do
+## Basic things to do3
 - Receiving data
 - Processing data
 - Showing output
+
+# Build Using
+- Keras with tensorflow backend

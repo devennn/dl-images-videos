@@ -74,3 +74,4 @@ class Setup_Sequential:
             metrics=['accuracy']
         )
         return model
+    
