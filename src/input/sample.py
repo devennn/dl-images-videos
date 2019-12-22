@@ -37,8 +37,8 @@ class Sample_Input:
         X_test /= 255
 
         # Convert class vectors to binary class matrices
-        y_train = keras.utils.to_categorical(y_train, 10)
-        y_test = keras.utils.to_categorical(y_test, 10)
+        y_train = keras.utils.to_categorical(y=y_train, num_classes=10)
+        y_test = keras.utils.to_categorical(y=y_test, num_classes=10)
 
         return X_train, X_test, y_train, y_test
 
@@ -49,8 +49,7 @@ class Sample_Input:
 
         # processing directory
         path = Path(dataset_folder).parent.absolute()
-        path = os.path.join(path, dataset_folder)
-        path = os.path.join(path, self.sample_name)
+        path = os.path.join(path, dataset_folder, self.sample_name)
         print("=== Loading from : {} ===".format(path))
 
         return prep.read_images(path, labels, show_im=True)

@@ -23,9 +23,10 @@ class Setup_Sequential:
         print("Number of nodes ::: {}".format(num_nodes))
         # Create a model and add layers
         model = Sequential()
-        model = self.__define_input(model)
-        model = self.__define_hidden_layer(model, nodes, num_nodes)
-        model = self.__define_output_compile(model)
+        model = self.__define_input(model=model)
+        model = self.__define_hidden_layer(model=model, nodes=nodes,
+            num_nodes=num_nodes)
+        model = self.__define_output_compile(model=model)
 
         if(self.show_summary == True):
             model.summary()
@@ -52,7 +53,7 @@ class Setup_Sequential:
                 padding='same', activation=self.lyr_activation)
             )
             model.add(MaxPooling2D(pool_size=(2, 2)))
-            model.add(Dropout(self.dropout_val))
+            model.add(Dropout(rate=self.dropout_val))
         return model
 
     """
@@ -62,7 +63,7 @@ class Setup_Sequential:
         # Output
         model.add(Flatten())
         model.add(Dense(units=512, activation=self.lyr_activation))
-        model.add(Dropout(self.dropout_val))
+        model.add(Dropout(rate=self.dropout_val))
         model.add(Dense(units=10, activation=self.out_activation))
 
         # Compile the model
@@ -74,4 +75,3 @@ class Setup_Sequential:
             metrics=['accuracy']
         )
         return model
-    
