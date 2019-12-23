@@ -1,10 +1,19 @@
 from pathlib import Path
+
+# Disable Warnings
 import os
 os.environ['KMP_WARNINGS'] = 'off'
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+
+# Set parallelism
 import tensorflow as tf
 tf.config.threading.set_inter_op_parallelism_threads(2)
  # Num of physical cores.
 tf.config.threading.set_intra_op_parallelism_threads(6)
+
+# Disable tensorflow deprecation warnings
+from tensorflow.python.util import deprecation
+deprecation._PRINT_DEPRECATION_WARNINGS = False
 
 class Train_Model:
     def __init__(self, batch_size=32, epochs=30):
