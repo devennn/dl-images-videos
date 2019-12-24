@@ -1,6 +1,6 @@
 from input.sample import Sample_Input
-from intelligent.setup_model import Setup_Sequential
-from intelligent.train_model import Train_Model
+from intelligent.setup import Setup_Sequential
+from intelligent.train import Train_Model
 import sys
 
 smp = Sample_Input(sample_name=sys.argv[1])

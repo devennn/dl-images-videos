@@ -1,6 +1,6 @@
 from tensorflow.keras.datasets import cifar10, cifar100
 from tensorflow import keras
-from . import image_prep as prep
+from . import image
 from pathlib import Path
 import os
 
@@ -52,4 +52,4 @@ class Sample_Input:
         path = os.path.join(path, dataset_folder, self.sample_name)
         print("=== Loading from : {} ===".format(path))
 
-        return prep.read_images(path, labels, show_im=True)
+        return image.read_images(path, labels, show_im=True)
