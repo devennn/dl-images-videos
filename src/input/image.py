@@ -16,3 +16,5 @@ def read_images(path, labels, show_im=False, flag=cv2.IMREAD_GRAYSCALE):
                 except cv2.error:
                     print("cv2.error: Skipping image {}".format(img))
                     pass
+    im = cv2.resize(im, (100, 100))
+    return im
