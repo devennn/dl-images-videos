@@ -14,6 +14,7 @@ class Setup_Sequential:
         self.out_activation = out_activation
         self.loss=loss
         self.optimizer = optimizer
+        self.input_shape = None
 
     """
     Define Sequential model
@@ -37,8 +38,11 @@ class Setup_Sequential:
     """
     def __define_input(self, model):
         # Input
-        model.add(Conv2D(filters=32, kernel_size=(3, 3), padding='same',
-            input_shape=(32, 32, 3), activation=self.in_activation)
+        model.add(Conv2D(filters=32, kernel_size=(3, 3),
+                    padding='same',
+                    input_shape=self.input_shape,
+                    activation=self.in_activation
+            )
         )
         return model
 

@@ -6,9 +6,6 @@ if [ "$#" !=  2 ]
         - PetImages
         "
 else
-    for arg in "$@"
-    do
-        echo "=== Running Full Test using ${1} dataset ==="
-        python -B "src\main.py" "${1}" "${2}"
-    done
+    echo "=== Running Full Test using ${1} dataset ==="
+    python -B "src\main.py" "${1}" "${2}"
 fi

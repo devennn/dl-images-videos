@@ -54,7 +54,7 @@ def load_petimage(sample_name):
     path = os.path.join(path, dataset_folder, sample_name)
     print("=== Loading from : {} ===".format(path))
 
-    return image.read_images(path, labels, show_im=True)
+    return image.read_images(path, labels)
 
 def load_cifar10_data(dir):
     num_train_samples = 50000
