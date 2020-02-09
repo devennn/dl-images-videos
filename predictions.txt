@@ -1,0 +1,2 @@
+This is image is a dog - Likelihood: 0.988590
+This is image is a cat - Likelihood: 0.775003
