@@ -57,20 +57,20 @@ def predict_class(model, class_labels):
 
 if __name__ == '__main__':
 
-    # X_train, X_test, y_train, y_test = datasets.load_petimage()
-    #
-    # data_shape, data_class = in_out_shape(X_train, y_train)
-    # print('=== Input Shape: {} Output Class: {} ==='.format(data_shape, data_class))
-    # model = define_sequential(input_shape=data_shape, output_class=data_class,
-    #         hidden_neurons=[32, 64], dropout_val=0.3, in_activation='relu',
-    #         lyr_activation='relu', out_activation='softmax',
-    #         loss='sparse_categorical_crossentropy', optimizer='adam',
-    #         show_summary=True
-    #     )
-    #
-    # model = train(model, tr_dat=(X_train, y_train), tst_dat=(X_test, y_test),
-    #     batch_size=64, epochs=1
-    # )
+    X_train, X_test, y_train, y_test = datasets.load_petimage()
+
+    data_shape, data_class = in_out_shape(X_train, y_train)
+    print('=== Input Shape: {} Output Class: {} ==='.format(data_shape, data_class))
+    model = define_sequential(input_shape=data_shape, output_class=data_class,
+            hidden_neurons=[32, 64], dropout_val=0.3, in_activation='relu',
+            lyr_activation='relu', out_activation='softmax',
+            loss='sparse_categorical_crossentropy', optimizer='adam',
+            show_summary=True
+        )
+
+    model = train(model, tr_dat=(X_train, y_train), tst_dat=(X_test, y_test),
+        batch_size=64, epochs=1
+    )
 
     class_labels = ['cat', 'dog']
     model = load_model()
