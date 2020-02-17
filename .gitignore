@@ -1,0 +1,11 @@
+keras-cats-dogs/datasets/
+keras-cats-dogs/results/
+keras-cats-dogs/*.json
+keras-cats-dogs/*.h5
+keras-cats-dogs/predictions.txt
+keras-cifar10/datasets/
+keras-cifar10/results/
+keras-cifar10/.floydexpt
+keras-cifar10/.floydignore
+keras-cifar10/floyd.yml
+keras-GAN-mnist/*.h5
