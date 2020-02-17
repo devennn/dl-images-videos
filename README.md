@@ -1,27 +1,5 @@
-# ProjectAgro
-- Agriculture project is the solutions for farmer to use AI technology.
-- Farmers do not have to go through technical understanding of Algorithm. They only need to think of the goals to achieve and collect data.
+# Deep Learning with Images/Videos
 
-## Inspiration
-To make AI technology usable by every farmers for good purpose
-
-## Basic Idea
-- Data
-  - Comes from farmers
-- AI
-  - Technical points. Where all processing happens
-- Action
-  - What information do we want?
-
-## Process
-1) Ask questions, what do i want to achieve?
-2) What is the data needed?
-3) Algorithm
-
-## Basic things to do3
-- Receiving data
-- Processing data
-- Showing output
-
-# Build Using
-- Keras with tensorflow backend
+- Keras Sequential Model - CIFAR10
+- Keras GAN Model - MNIST
+- Keras Seuential Model - Cats & Dogs
